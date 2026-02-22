@@ -98,3 +98,36 @@
 .round-btn:active {
   transform: scale(0.9);
 }
+
+/* === Light Theme === */
+:root[data-theme="light"] .nes-console-body {
+  background: linear-gradient(145deg, #f3f4f7, #dfe3ea);
+  border-color: #666a74;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.7), 0 4px 20px rgba(0, 0, 0, 0.16);
+}
+
+:root[data-theme="light"] .dpad-btn {
+  background: #616671;
+  border-color: #2e3239;
+  color: #f8f9fc;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+:root[data-theme="light"] .dpad-btn.center {
+  background: #4f545e;
+}
+
+:root[data-theme="light"] .small-btn {
+  background: #808693;
+  color: #ffffff;
+  border-color: #383c45;
+  box-shadow: 0 2px #4b4f59;
+  text-shadow: none;
+}
+
+:root[data-theme="light"] .round-btn {
+  background: radial-gradient(circle at top left, #ff5e73, #d3163a);
+  border-color: #3d1118;
+  color: #fff;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.35), 0 0 8px rgba(211, 22, 58, 0.35);
+}

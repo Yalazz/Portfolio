@@ -1,0 +1,14 @@
+.hero3d-canvas {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .hero3d-canvas {
+    max-width: 280px;
+    height: 220px;
+  }
+}

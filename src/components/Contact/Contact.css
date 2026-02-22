@@ -33,7 +33,7 @@
   text-decoration: none;                  /* alt çizgi kapalı */
   color: var(--color-text);
   transition: color 0.25s ease, transform 0.2s ease, text-shadow 0.25s ease;
-  text-shadow: 0 0 6px rgba(0,0,0,0);     /* hover’da yumuşak parlama alacak */
+  text-shadow: 0 0 6px rgba(0,0,0,0);     /* hover'da yumuşak parlama alacak */
   outline: none;
 }
 
@@ -48,7 +48,7 @@
 /* Metin (kutu yok, sadece hover efekti) */
 .contact-text {
   font-weight: 500;
-  border-bottom: 1px dashed transparent;  /* hover’da çizgi gelecek */
+  border-bottom: 1px dashed transparent;  /* hover'da çizgi gelecek */
   transition: border-color 0.25s ease, color 0.25s ease;
 }
 

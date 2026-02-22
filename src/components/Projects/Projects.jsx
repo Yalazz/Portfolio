@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import { SiVulkan, SiUnity } from "react-icons/si";
 import { FaRobot, FaGamepad } from "react-icons/fa";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 export default function Projects() {
   const projects = [
@@ -39,8 +40,10 @@ export default function Projects() {
     },
   ];
 
+  const gridRef = useScrollReveal({ stagger: true });
+
   return (
-    <div className="pg-grid">
+    <div className="pg-grid" ref={gridRef}>
       {projects.map((p, idx) => (
         <article className="pg-card" key={idx}>
           <header className="pg-head">

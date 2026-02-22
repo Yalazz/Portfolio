@@ -2,6 +2,7 @@ import React from "react";
 import "./Experience.css";
 import { FaBriefcase } from "react-icons/fa";
 import RetroCRTBox from "../RetroCRT/RetroCRT";
+import useScrollReveal from "../../hooks/useScrollReveal";
 
 
 
@@ -42,8 +43,10 @@ export default function Experience() {
     },
   ];
 
+  const sectionRef = useScrollReveal();
+
   return (
-    <section className="experience-container" aria-labelledby="exp-title">
+    <section className="experience-container" aria-labelledby="exp-title" ref={sectionRef}>
       <h3 id="exp-title" className="exp-section-title">Experience</h3>
       <div className="experience-with-crt">
         <ul className="experience-list">

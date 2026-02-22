@@ -1,11 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaFileDownload } from "react-icons/fa";
 
-/**
- * İstersen props ile override edebilirsin:
- * <Contact email="me@domain.com" github="https://github.com/me" linkedin="https://linkedin.com/in/me" />
- */
 export default function Contact({
   email = "emreeblici@gmail.com",
   github = "https://github.com/Yalazz",
@@ -52,6 +48,18 @@ export default function Contact({
             <span className="contact-text">
               {linkedin.replace(/^https?:\/\//, "")}
             </span>
+          </a>
+        </li>
+
+        <li className="contact-item">
+          <a
+            className="contact-link"
+            href="/assets/cv/Emre_Bilici_CV.pdf"
+            download
+            aria-label="Download CV"
+          >
+            <FaFileDownload className="contact-icon" aria-hidden="true" />
+            <span className="contact-text">Download CV</span>
           </a>
         </li>
       </ul>

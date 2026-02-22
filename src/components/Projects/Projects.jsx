@@ -1,42 +1,41 @@
 import React from "react";
-import "./ProjectGrid.css";
-import { SiVulkan, SiUnity, SiNvidia } from "react-icons/si";
-import { GiAbstract050 } from "react-icons/gi";
+import "./Projects.css";
+import { SiVulkan, SiUnity } from "react-icons/si";
+import { FaRobot, FaGamepad } from "react-icons/fa";
 
-export default function ProjectGrid() {
+export default function Projects() {
   const projects = [
     {
-      title: "Vulkan Engine",
+      title: "Yalaz Engine",
       description:
-        "Custom 3D renderer with real-time lighting, PBR, and GLTF support.",
-      tags: ["Vulkan", "C++", "PBR"],
-      link: "https://github.com/emrebilici/yalaz-engine",
+        "Cross-platform 3D rendering engine with PBR, path tracing, skeletal animation, and a full editor.",
+      tags: ["Vulkan", "C++20", "CMake"],
+      link: "https://github.com/Yalazz/Yalaz-Engine",
       icon: <SiVulkan />,
     },
     {
-      title: "Unity Game Projects",
+      title: "SpriteAI",
       description:
-        "Gameplay systems, AI, and UI/UX implementation in Unity 3D.",
-      tags: ["Unity", "C#", "Game Design"],
-      link: "https://github.com/emrebilici/unity-games",
+        "AI-powered tool that generates game-ready sprite assets from text prompts.",
+      tags: ["AI", "Python", "Game Art"],
+      link: "https://github.com/Yalazz/SpriteAI",
+      icon: <FaRobot />,
+    },
+    {
+      title: "The Lighthouse",
+      description:
+        "A horror exploration game built in Unity with atmospheric lighting and shader effects.",
+      tags: ["Unity", "C#", "Horror"],
+      link: "https://github.com/Yalazz/TheLighthouse",
+      icon: <FaGamepad />,
+    },
+    {
+      title: "Stellar Recon: Kepler",
+      description:
+        "Space exploration game with custom shaders and procedural visuals, built as a team project.",
+      tags: ["Unity", "C#", "ShaderLab"],
+      link: "https://github.com/begumdonmez/g-stellar-recon-kepler",
       icon: <SiUnity />,
-    },
-    {
-      title: "Shader Experiments",
-      description:
-        "Creative GLSL and Shadertoy visuals: glow, distortion, fractals.",
-      tags: ["GLSL", "Shadertoy", "WebGL"],
-      link: "https://shadertoy.com/user/emrebilici",
-      icon: <GiAbstract050 />, // 👈 önerilen ikon
-    },
-
-    {
-      title: "GPU Compute / Path Tracer",
-      description:
-        "Realtime GPU compute renderer with ray/path tracing techniques.",
-      tags: ["GPU", "Compute Shader", "Ray Tracing"],
-      link: "https://github.com/emrebilici/gpu-tracer",
-      icon: <SiNvidia />,
     },
   ];
 

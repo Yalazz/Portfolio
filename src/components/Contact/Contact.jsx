@@ -9,7 +9,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Contact({
   email = "emreeblici@gmail.com",
   github = "https://github.com/Yalazz",
-  linkedin = "https://linkedin.com/in/emre0",
+  linkedin = "https://www.linkedin.com/in/yalaz/",
 }) {
   return (
     <div className="contact-container" role="region" aria-label="Contact">

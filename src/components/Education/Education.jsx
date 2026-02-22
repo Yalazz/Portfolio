@@ -3,16 +3,10 @@ import "./Education.css";
 
 const educationData = [
   {
-    degree: "B.A. in Digital Game Design",
+    degree: "B.Sc. in Digital Game Design (Ongoing)",
     school: "Beykoz University",
-    year: "2021 – 2025",
-    note: "Graduated with strong emphasis on graphics programming and interactive design.",
-  },
-  {
-    degree: "M.Sc. in Computer Engineering (Planned)",
-    school: "ITU / YTU",
-    year: "2025+",
-    note: "Focusing on GPU-based rendering, Vulkan engine development, and real-time systems.",
+    year: "2024 – Present",
+    note: "High Honor Student (3x). Top 3 in department, Spring 2023. GPA: 3.8/4.0.",
   },
 ];
 

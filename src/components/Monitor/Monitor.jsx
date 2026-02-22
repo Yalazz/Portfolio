@@ -166,8 +166,8 @@ export default function RetroMonitor({ poweredOn = false, onTogglePower }) {
       return;
     }
     if (cmd === "linkedin") {
-      print("Opening LinkedIn: linkedin.com/in/emrebilici");
-      window.open("https://linkedin.com/in/emrebilici", "_blank", "noopener,noreferrer");
+      print("Opening LinkedIn: linkedin.com/in/yalaz");
+      window.open("https://www.linkedin.com/in/yalaz/", "_blank", "noopener,noreferrer");
       return;
     }
     if (cmd === "email") {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Experience.css";
 import { FaBriefcase } from "react-icons/fa";
-import RetroCRTBox from "../RetroCRT/RetroCRTScene";
+import RetroCRTBox from "../RetroCRT/RetroCRT";
 
 
 
@@ -9,15 +9,25 @@ export default function Experience() {
   const experienceData = [
     {
       role: "Software Developer",
+      company: "VIS Technology",
+      period: "Aug 2025 – Present",
+      details: [
+        "Implemented secure auth flows using JWT, integrating React frontends with Spring Boot microservices.",
+        "Built responsive React interfaces with routing, protected pages, and API service layers.",
+        "Developed SAPUI5 business screens and workflow components for enterprise credit-evaluation processes.",
+        "Integrated RabbitMQ-based messaging pipelines for async operations and document-processing flows.",
+        "Optimized PostgreSQL and MSSQL queries, schemas, and stored procedures for performance and stability.",
+      ],
+    },
+    {
+      role: "Software Specialist",
       company: "Flowick Teknoloji A.Ş.",
       period: "Oct 2024 – Present",
       details: [
-[
-  "Developed Python and Java-based bots for advanced automation systems.",
-  "Integrated custom translation and scraping solutions into Bubble.io workflows.",
-  "Designed user-friendly interfaces and custom email systems using HTML/CSS.",
-]
-
+        "Developed automation bots for the Bubble.io platform using Python, Java, and JavaScript.",
+        "Created translation bots to automate language processing tasks integrated into Bubble.io.",
+        "Built web scraping bots with Python for efficient data extraction and analysis.",
+        "Designed email systems using HTML and JavaScript to enhance communication workflows.",
       ],
     },
     {
@@ -25,12 +35,9 @@ export default function Experience() {
       company: "Smart IQ",
       period: "Jul 2024 – Aug 2024",
       details: [
-[
-  "Built real-time data processing infrastructure using RabbitMQ.",
-  "Developed notification systems with .NET Core and SMTP.",
-  "Contributed to PostgreSQL logging and Vue.js-based admin panel development.",
-]
-
+        "Built real-time data processing infrastructure using RabbitMQ.",
+        "Developed notification systems with .NET Core and SMTP.",
+        "Contributed to PostgreSQL logging and Vue.js-based admin panel development.",
       ],
     },
   ];

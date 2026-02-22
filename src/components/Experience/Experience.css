@@ -148,7 +148,7 @@
   }
 }
 
-/* CRT içeriği RetroCRTScene'e özel */
+/* CRT içeriği RetroCRT'ye özel */
 .experience-crt {
   flex: 1 1 400px;
   display: flex;

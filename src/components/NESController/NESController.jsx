@@ -1,4 +1,4 @@
-// 📁 src/components/RetroCRT/NESController.jsx
+// 📁 src/components/NESController/NESController.jsx
 import React from "react";
 import "./NESController.css";
 

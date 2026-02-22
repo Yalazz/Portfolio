@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 
 import Hero3D from "./components/Hero3D/Hero3D";
-import ProjectGrid from "./components/ProjectGrid/ProjectGrid";
+import Projects from "./components/Projects/Projects";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Monitor from "./components/Monitor/Monitor";
-import FloatingSocial from "./components/FloatingSocial/FloatingSocial";
+import SocialLinks from "./components/SocialLinks/SocialLinks";
 import Loader from "./components/Loader/Loader"; // <== loader eklendi
 
 export default function App() {
@@ -75,14 +75,14 @@ export default function App() {
               EMRE BILICI
             </span>
             <span className="hero-subtitle">
-              Graphics Engineer - Game Developer
+              Software Developer & Graphics Engineer
             </span>
           </h1>
           <Hero3D />
         </section>
 
         <section id="projects" className="section">
-          <ProjectGrid />
+          <Projects />
         </section>
 
         <section id="experience" className="section">
@@ -99,7 +99,7 @@ export default function App() {
       </main>
 
       {/* === FLOATING === */}
-      <FloatingSocial
+      <SocialLinks
         poweredOn={poweredOn}
         setPoweredOn={(fnOrBool) =>
           setPoweredOn(typeof fnOrBool === "function" ? fnOrBool : !!fnOrBool)

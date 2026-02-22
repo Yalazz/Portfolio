@@ -6,7 +6,7 @@ import {
   FaSun,
   FaMoon,
 } from "react-icons/fa";
-import "./FloatingSocial.css";
+import "./SocialLinks.css";
 
 /** Basit beep üretici (Web Audio) */
 function useBeep() {
@@ -39,7 +39,7 @@ function useBeep() {
   return { beep };
 }
 
-export default function FloatingSocial({ poweredOn, setPoweredOn, theme, setTheme }) {
+export default function SocialLinks({ poweredOn, setPoweredOn, theme, setTheme }) {
   const { beep } = useBeep();
 
   const togglePower = () => {
@@ -98,7 +98,7 @@ export default function FloatingSocial({ poweredOn, setPoweredOn, theme, setThem
 
         <a
           className="fs-btn"
-          href="https://linkedin.com/in/emrebilici"
+          href="https://www.linkedin.com/in/yalaz/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

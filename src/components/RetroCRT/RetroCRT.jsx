@@ -1,21 +1,33 @@
-// 📁 src/components/RetroCRT/RetroCRTScene.jsx
+// 📁 src/components/RetroCRT/RetroCRT.jsx
 
 import React, { useState, useEffect, useCallback } from "react";
 
 import NESController from "../NESController/NESController";
 import ModelViewer from "./ModelViewer";
-// import React, { useState, useEffect, useCallback } from "react";
 
+function formatModelName(filename) {
+  return filename
+    .replace(/\.glb$/i, "")
+    .replace(/[_-]/g, " ");
+}
 
-export default function RetroCRTScene() {
-  const models = [
-    { name: "House", file: "/assets/models/house.glb" },
-    { name: "FINAL", file: "/assets/models/FINAL.glb" },
-    { name: "BeigeMeetingRoom_2", file: "/assets/models/BeigeMeetingRoom_2.glb" },
-  ];
-
+export default function RetroCRT() {
+  const [models, setModels] = useState([]);
   const [cursorIndex, setCursorIndex] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState(null);
+
+  useEffect(() => {
+    fetch("/assets/models/models.json")
+      .then((res) => res.json())
+      .then((files) =>
+        setModels(
+          files.map((file) => ({
+            name: formatModelName(file),
+            file: `/assets/models/${file}`,
+          }))
+        )
+      );
+  }, []);
 
 const handleInput = useCallback((input) => {
   if (input === "Left" || input === "Up") {
